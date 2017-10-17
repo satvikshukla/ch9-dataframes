@@ -1,13 +1,15 @@
 # Exercise 4: Gates Foundation Educational Grants
 
+#setwd("~/Google\ Drive/Study/INFO\ 201/Assignments/ch9-dataframes/exercise-4/data")
 # Read data into a variable called `grants` using the `read.csv` function
 # Make sure *not* to read the strings as factors
+grants <- read.csv("data/gates_money.csv", stringsAsFactors = FALSE)
 
 # Use the View function to look at your data
-
+View(grants)
 
 # Create a variable `spending` as the `total_amount` column of the dataset
-
+spending <- grants$total_amount
 
 # Confirm that your `spending` variable is a vector using the `is.vector` function
 
